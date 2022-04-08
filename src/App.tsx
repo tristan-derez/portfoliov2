@@ -5,13 +5,17 @@ import { QueryClient, QueryClientProvider } from "react-query";
 
 const queryClient = new QueryClient();
 
+import { Home } from "./components/Home";
+
 const theme = extendTheme({ config: { initialColorMode: "light" } });
 
 function App() {
     return (
         <QueryClientProvider client={queryClient}>
             <ChakraProvider theme={theme}>
-                <Flex direction="column" boxSize="100%"></Flex>
+                <Flex direction="column" boxSize="100%">
+                    <Home />
+                </Flex>
             </ChakraProvider>
         </QueryClientProvider>
     );
