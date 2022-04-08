@@ -14,7 +14,7 @@ import { IoMdMoon, IoMdSunny } from "react-icons/io";
 import { GiHamburger } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 
-export const HeaderComponent = () => {
+export const Navbar = () => {
     const { toggleColorMode, colorMode } = useColorMode();
     let [display, changeDisplay] = useState("none");
     return (
