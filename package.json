@@ -12,6 +12,7 @@
         "@chakra-ui/react": "^1.8.3",
         "@emotion/react": "^11.7.1",
         "@emotion/styled": "^11.6.0",
+        "@fontsource/zen-kaku-gothic-antique": "^4.5.10",
         "@pastable/core": "^0.1.19",
         "@xstate/react": "^2.0.0",
         "axios": "^0.25.0",

@@ -1,4 +1,5 @@
 import "./index.css";
+import "@fontsource/zen-kaku-gothic-antique";
 
 import React from "react";
 import ReactDOM from "react-dom";
