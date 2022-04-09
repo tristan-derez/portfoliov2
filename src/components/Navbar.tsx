@@ -1,18 +1,10 @@
-import {
-    Flex,
-    HStack,
-    IconButton,
-    Image,
-    Link,
-    Spacer,
-    chakra,
-    useColorMode,
-    useColorModeValue,
-} from "@chakra-ui/react";
+import { Flex, IconButton, Image, Link, Text, Spacer, chakra, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { useState } from "react";
-import { IoMdMoon, IoMdSunny } from "react-icons/io";
-import { GiHamburger } from "react-icons/gi";
+
+// icons
+import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
 
 export const Navbar = () => {
     const { toggleColorMode, colorMode } = useColorMode();
@@ -21,49 +13,56 @@ export const Navbar = () => {
         <Flex
             w="100%"
             pos="fixed"
-            padding="5px"
+            px="20px"
+            py="10px"
             color={useColorModeValue("black", "white")}
             background={useColorModeValue("#FFFFFF", "#1A202C")}
+            alignItems="center"
+            fontFamily="Zen Kaku Gothic Antique"
         >
             <Flex>
-                <Link href="/">
-                    <Image src="images/logo_tristan.png" boxSize="40px" alt="website logo" />
-                </Link>
+                <Text>Tristan Derez</Text>
             </Flex>
             <Spacer />
-            <HStack
-                mr="20px"
-                spacing="20px"
-                fontSize="16px"
+            <Flex
+                gap="30px"
+                pr="30px"
+                fontSize="1rem"
                 fontFamily="Zen Kaku Gothic Antique"
+                letterSpacing="1px"
                 display={["none", "none", "flex", "flex"]}
             >
-                <HeaderLink href="/#about">A propos</HeaderLink>
-                <HeaderLink href="/#projects">Projets</HeaderLink>
-                <HeaderLink href="/contact">Contact</HeaderLink>
-            </HStack>
-            <HStack>
+                <HeaderLink href="#about">A propos</HeaderLink>
+                <HeaderLink href="#projects">Projets</HeaderLink>
+                <HeaderLink href="#contact">Contact</HeaderLink>
+            </Flex>
+            <Flex>
                 {/* Hamburger Icon/Open Menu Button */}
                 <IconButton
                     aria-label="open menu"
-                    icon={<GiHamburger />}
+                    icon={<GiHamburgerMenu />}
                     display={["flex", "flex", "none", "none"]}
                     onClick={() => changeDisplay("flex")}
+                    _hover={{ bg: "none" }}
                     bg="none"
                 />
                 {/* Toggle Light/Dark Mode Button */}
-                <IconBut isRound="yes" onClick={toggleColorMode}>
-                    {colorMode === "light" ? <IoMdMoon /> : <IoMdSunny />}
+                <IconBut
+                    isRound="yes"
+                    onClick={toggleColorMode}
+                    display={["none", "none", "inline-flex", "inline-flex"]}
+                    aria-label="toggle light/dark mode"
+                >
+                    {colorMode === "light" ? <BsMoonStarsFill /> : <BsSunFill />}
                 </IconBut>
-            </HStack>
+            </Flex>
             {/* Navbar on mobile device */}
             <Flex
                 w="100vw"
                 zIndex={20}
                 h="100vh"
                 pos="fixed"
-                top="0"
-                left="0"
+                inset="0"
                 overflow="none"
                 flexDir="column"
                 display={display}
@@ -75,34 +74,33 @@ export const Navbar = () => {
                     {/* Close Icon Button */}
                     <IconButton
                         aria-label="close menu"
-                        mt={2}
-                        mr={2}
+                        position="absolute"
+                        top="10px"
+                        right="20px"
                         size="lg"
+                        h="40px"
+                        w="40px"
                         icon={<AiOutlineClose />}
                         onClick={() => changeDisplay("none")}
+                        _hover={{ bg: "none" }}
                         bg="none"
                     />
                 </Flex>
-                <Flex flexDir="column" align="center" fontFamily="Zen Kaku Gothic Antique">
-                    <HeaderLink href="/">Home</HeaderLink>
-                    <HeaderLink mt="40px" href="/contact">
-                        Contact
-                    </HeaderLink>
+                <Flex direction="column" alignItems="center" pt="100px" gap="25px" fontFamily="Zen Kaku Gothic Antique">
+                    <HeaderLink href="#">Home</HeaderLink>
+                    <HeaderLink href="#">Contact</HeaderLink>
                 </Flex>
             </Flex>
         </Flex>
     );
 };
 
-const HeaderLink = ({ children, ...props }) => {
+//navbar link
+export const HeaderLink = ({ children, ...props }) => {
     return (
         <chakra.a
-            padding="10px"
             cursor="pointer"
             _hover={{
-                backgroundImage: "url('/images/trace-peinture-orange.png')",
-                backgroundSize: "cover",
-                backgroundRepeat: "round",
                 fontWeight: "bold",
                 transform: "translateY(3px)",
             }}
@@ -113,7 +111,7 @@ const HeaderLink = ({ children, ...props }) => {
     );
 };
 
-const IconBut = ({ children, ...props }) => {
+export const IconBut = ({ children, ...props }) => {
     const background = useColorModeValue("orange.400", "orange.600");
     return (
         <IconButton
