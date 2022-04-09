@@ -16,7 +16,6 @@ export const Navbar = () => {
             px="20px"
             py="10px"
             color={useColorModeValue("black", "white")}
-            background={useColorModeValue("#FFFFFF", "#1A202C")}
             alignItems="center"
             fontFamily="Zen Kaku Gothic Antique"
         >
