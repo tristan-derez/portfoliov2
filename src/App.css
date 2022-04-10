@@ -26,6 +26,6 @@ html {
 
 @media only screen and (max-width: 1024px) {
     .cursor-dot-outline {
-        border: 0px;
+        border: 0;
     }
 }
