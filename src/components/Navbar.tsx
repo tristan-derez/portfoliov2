@@ -31,9 +31,9 @@ export const Navbar = () => {
                 letterSpacing="1px"
                 display={["none", "none", "flex", "flex"]}
             >
-                <HeaderLink href="#about">A propos</HeaderLink>
-                <HeaderLink href="#projects">Projets</HeaderLink>
-                <HeaderLink href="#contact">Contact</HeaderLink>
+                <CustomLink href="#about">A propos</CustomLink>
+                <CustomLink href="#projects">Projets</CustomLink>
+                <CustomLink href="#contact">Contact</CustomLink>
             </Flex>
             <Flex>
                 {/* Hamburger Icon/Open Menu Button */}
@@ -86,8 +86,8 @@ export const Navbar = () => {
                     />
                 </Flex>
                 <Flex direction="column" alignItems="center" pt="100px" gap="25px" fontFamily="Zen Kaku Gothic Antique">
-                    <HeaderLink href="#">Home</HeaderLink>
-                    <HeaderLink href="#">Contact</HeaderLink>
+                    <CustomLink href="#">Home</CustomLink>
+                    <CustomLink href="#">Contact</CustomLink>
                 </Flex>
             </Flex>
         </Flex>
@@ -95,7 +95,7 @@ export const Navbar = () => {
 };
 
 //navbar link
-export const HeaderLink = ({ children, ...props }) => {
+export const CustomLink = ({ children, ...props }) => {
     return (
         <chakra.a
             cursor="pointer"
