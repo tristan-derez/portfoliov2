@@ -44,6 +44,7 @@ export const Navbar = () => {
                     onClick={() => changeDisplay("flex")}
                     _hover={{ bg: "none" }}
                     bg="none"
+                    color="orange"
                 />
                 {/* Toggle Light/Dark Mode Button */}
                 <IconBut
@@ -111,10 +112,9 @@ export const CustomLink = ({ children, ...props }) => {
 };
 
 export const IconBut = ({ children, ...props }) => {
-    const background = useColorModeValue("orange.400", "orange.600");
     return (
         <IconButton
-            bg={background}
+            bg="orange"
             _hover={{ bg: useColorModeValue("orange.200", "orange.400") }}
             {...props}
             aria-label="toggle light/dark mode"
