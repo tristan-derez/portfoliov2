@@ -12,8 +12,8 @@ html {
 .cursor-dot-outline {
     width: 50px;
     height: 50px;
-    background-color: transparent;
-    border: 1px double black;
+    background-color: rgb(265, 165, 0, 0.5);
+    border: 2px solid orange;
     pointer-events: none;
     position: absolute;
     top: 50%;
