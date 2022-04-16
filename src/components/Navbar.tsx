@@ -1,4 +1,4 @@
-import { Flex, IconButton, Image, Link, Text, Spacer, chakra, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { Flex, IconButton, Text, Spacer, chakra, useColorMode, useColorModeValue, Button } from "@chakra-ui/react";
 import { useState } from "react";
 
 // icons
@@ -9,6 +9,7 @@ import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
 export const Navbar = () => {
     const { toggleColorMode, colorMode } = useColorMode();
     let [display, changeDisplay] = useState("none");
+    const mobileSwitch = useColorModeValue("black", "white");
     return (
         <Flex
             w="100%"
@@ -20,7 +21,9 @@ export const Navbar = () => {
             fontFamily="Zen Kaku Gothic Antique"
         >
             <Flex>
-                <Text>Tristan Derez</Text>
+                <Text fontFamily="HarmondSemi" fontSize="2rem">
+                    Tristan Derez
+                </Text>
             </Flex>
             <Spacer />
             <Flex
@@ -67,7 +70,7 @@ export const Navbar = () => {
                 flexDir="column"
                 display={display}
                 color={useColorModeValue("black", "white")}
-                background={useColorModeValue("#FFFFFF", "#1A202C")}
+                background={useColorModeValue("#FFFDD0", "black")}
                 position="absolute"
             >
                 <Flex justify="flex-end">
@@ -90,6 +93,18 @@ export const Navbar = () => {
                     <CustomLink href="#">Home</CustomLink>
                     <CustomLink href="#">Contact</CustomLink>
                 </Flex>
+            </Flex>
+            <Flex position="fixed" bottom="20px" right="20px">
+                <Button
+                    px="20px"
+                    py="5px"
+                    bg="none"
+                    variant="outline"
+                    borderColor={mobileSwitch}
+                    _hover={{ color: "orange" }}
+                >
+                    Dark
+                </Button>
             </Flex>
         </Flex>
     );
