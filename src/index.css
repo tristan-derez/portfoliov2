@@ -9,3 +9,15 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+@font-face {
+    font-family: "HarmondBold";
+    src: local("Harmond-ExtraBoldExpanded"), url("./fonts/Harmond/Harmond-ExtraBoldExpanded.otf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "HarmondSemi";
+    src: local("Harmond-SemiBoldCondensed"), url("./fonts/Harmond/Harmond-SemiBoldCondensed.otf") format("truetype");
+    font-weight: 500;
+}
