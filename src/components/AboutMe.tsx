@@ -1,7 +1,6 @@
 import { Box, Flex, Heading, Text, chakra, useColorModeValue, Button, Center, Link } from "@chakra-ui/react";
 
 export const AboutMe = ({ ...props }) => {
-    const textlink = useColorModeValue("orange.400", "orange.600");
     return (
         <Flex
             w="100%"
@@ -19,14 +18,9 @@ export const AboutMe = ({ ...props }) => {
                 <Text fontFamily="Zen Kaku Gothic Antique" fontSize="20px" mt="15px">
                     Bonjour ! <br />
                     Suite à l'apprentissage en autodidacte du développement Front-End sur
-                    <AboutMeLink href="https://codecademy.com" color={textlink}>
-                        Codecademy
-                    </AboutMeLink>
-                    , je me lance dans une formation
-                    <AboutMeLink href="https://openclassrooms.com" color={textlink}>
-                        OpenClassrooms
-                    </AboutMeLink>{" "}
-                    en alternance pour consolider et faire certifier mes connaissances.
+                    <AboutMeLink href="https://codecademy.com">Codecademy</AboutMeLink>, je me lance dans une formation
+                    <AboutMeLink href="https://openclassrooms.com">OpenClassrooms</AboutMeLink> en alternance pour
+                    consolider et faire certifier mes connaissances.
                     <br />
                     Je cherche donc une alternance d'un an, au rythme de 3-4 jours par semaine en entreprise.
                 </Text>
@@ -43,8 +37,10 @@ export const AboutMe = ({ ...props }) => {
 };
 
 const AboutMeLink = ({ children, ...props }) => {
+    const importantWord = useColorModeValue("orange.400", "orange.600");
     return (
         <chakra.a
+            color="orange"
             cursor="pointer"
             pl="5px"
             _hover={{
@@ -52,7 +48,7 @@ const AboutMeLink = ({ children, ...props }) => {
                 backgroundSize: "cover",
                 backgroundRepeat: "round",
                 fontWeight: "bold",
-                color: "black",
+                color: { importantWord },
             }}
             target="_blank"
             {...props}
