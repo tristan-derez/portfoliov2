@@ -4,7 +4,6 @@ import { useState } from "react";
 // icons
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
 
 export const Navbar = () => {
     const { toggleColorMode, colorMode } = useColorMode();
@@ -14,7 +13,7 @@ export const Navbar = () => {
         <Flex
             w="100%"
             pos="fixed"
-            px="20px"
+            px="40px"
             py="10px"
             color={useColorModeValue("black", "white")}
             alignItems="center"
@@ -28,7 +27,6 @@ export const Navbar = () => {
             <Spacer />
             <Flex
                 gap="30px"
-                pr="30px"
                 fontSize="1rem"
                 fontFamily="Zen Kaku Gothic Antique"
                 letterSpacing="1px"
@@ -49,15 +47,6 @@ export const Navbar = () => {
                     bg="none"
                     color="orange"
                 />
-                {/* Toggle Light/Dark Mode Button */}
-                <IconBut
-                    isRound="yes"
-                    onClick={toggleColorMode}
-                    display={["none", "none", "inline-flex", "inline-flex"]}
-                    aria-label="toggle light/dark mode"
-                >
-                    {colorMode === "light" ? <BsMoonStarsFill /> : <BsSunFill />}
-                </IconBut>
             </Flex>
             {/* Navbar on mobile device */}
             <Flex
@@ -94,16 +83,18 @@ export const Navbar = () => {
                     <CustomLink href="#">Contact</CustomLink>
                 </Flex>
             </Flex>
-            <Flex position="fixed" bottom="20px" right="20px">
+            <Flex position="fixed" bottom="40px" right="40px">
                 <Button
                     px="20px"
                     py="5px"
                     bg="none"
                     variant="outline"
                     borderColor={mobileSwitch}
+                    onClick={toggleColorMode}
                     _hover={{ color: "orange" }}
+                    aria-label="toggle light/dark mode"
                 >
-                    Dark
+                    {colorMode === "light" ? "Dark" : "Light"}
                 </Button>
             </Flex>
         </Flex>
