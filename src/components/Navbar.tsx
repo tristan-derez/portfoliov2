@@ -11,8 +11,9 @@ export const Navbar = () => {
     const mobileSwitch = useColorModeValue("black", "white");
     return (
         <Flex
-            w="100%"
             pos="fixed"
+            w="100%"
+            maxWidth="inherit"
             px="40px"
             py="10px"
             color={useColorModeValue("black", "white")}
