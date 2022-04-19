@@ -3,19 +3,18 @@ import { Box, Flex, Heading, Text, chakra, useColorModeValue, Button, Center, Li
 export const AboutMe = ({ ...props }) => {
     return (
         <Flex
-            w="100%"
-            px="15px"
+            px="40px"
             flexDirection={["column", "column", "column", "row-reverse"]}
             alignItems="center"
             justifyContent="center"
             {...props}
             id="about"
         >
-            <Box pt={["20px", "20px", "20px", 0]} w={["auto", "auto", "700px", "850px"]} textAlign="center">
+            <Box pt={["20px", "20px", "20px", 0]} textAlign="center">
                 <Heading as="h1" fontFamily="Kirang Haerang" fontSize="50px">
                     About me
                 </Heading>
-                <Text fontFamily="Zen Kaku Gothic Antique" fontSize="20px" mt="15px">
+                <Text fontFamily="Zen Kaku Gothic Antique" fontSize="20px" pt="15px">
                     Bonjour ! <br />
                     Suite à l'apprentissage en autodidacte du développement Front-End sur
                     <AboutMeLink href="https://codecademy.com">Codecademy</AboutMeLink>, je me lance dans une formation
