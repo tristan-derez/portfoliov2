@@ -11,7 +11,7 @@ export const Welcome = () => {
             letterSpacing="-0.8px"
             px="40px"
         >
-            <Flex direction="column" flexWrap="wrap" whiteSpace="nowrap" fontWeight="bold" minW={["80%", "80%", "60%"]}>
+            <Flex direction="column" flexWrap="wrap" whiteSpace="nowrap" fontWeight="bold">
                 <Flex>
                     <Text fontSize={["2.5rem", "3.5rem", "4.5rem", "6.5rem"]} lineHeight="1">
                         Bienvenue
