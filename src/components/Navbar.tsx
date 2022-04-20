@@ -18,18 +18,19 @@ export const Navbar = () => {
             py="10px"
             color={useColorModeValue("black", "white")}
             alignItems="center"
-            fontFamily="Zen Kaku Gothic Antique"
+            fontFamily="Raleway"
         >
             <Flex>
-                <Text fontFamily="HarmondSemi" fontSize="2rem">
+                {/* <Text fontFamily="Raleway" fontSize="2rem">
                     Tristan Derez
-                </Text>
+                </Text> */}
             </Flex>
             <Spacer />
             <Flex
                 gap="30px"
                 fontSize="1rem"
-                fontFamily="Zen Kaku Gothic Antique"
+                fontFamily="Raleway"
+                fontWeight="400"
                 letterSpacing="1px"
                 display={["none", "none", "flex", "flex"]}
             >
@@ -77,7 +78,7 @@ export const Navbar = () => {
                         bg="none"
                     />
                 </Flex>
-                <Flex direction="column" alignItems="center" pt="100px" gap="25px" fontFamily="Zen Kaku Gothic Antique">
+                <Flex direction="column" alignItems="center" pt="100px" gap="25px" fontFamily="Raleway">
                     <CustomLink href="#">Home</CustomLink>
                     <CustomLink href="#">Contact</CustomLink>
                 </Flex>

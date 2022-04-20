@@ -3,21 +3,21 @@ import { Flex, Text } from "@chakra-ui/react";
 
 export const Welcome = () => {
     return (
-        <Flex minH="100vh" justifyContent="center" alignItems="center" fontFamily="HarmondSemi" letterSpacing="-0.8px">
-            <Flex direction="column" fontWeight="bold" h="inherit" w={["300px", "350px", "500px", "750px"]}>
+        <Flex minH="100vh" justifyContent="center" alignItems="center" fontFamily="Raleway" fontWeight="600">
+            <Flex direction="column" h="inherit" w={["300px", "450px", "600px", "850px"]}>
                 <Flex>
                     <Text fontSize={["40px", "56px", "80px", "115px"]} lineHeight="1">
                         Bienvenue
                     </Text>
                 </Flex>
                 <Flex justifyContent={["flex-start", "flex-start", "flex-end"]}>
-                    <Text fontSize={["40px", "56px", "80px", "115px"]} lineHeight="1">
+                    <Text fontSize={["40px", "56px", "80px", "115px"]} lineHeight="1" fontWeight="300">
                         sur le portfolio
                     </Text>
                 </Flex>
                 <Flex>
-                    <Flex fontSize={["40px", "56px", "80px", "115px"]} lineHeight="1">
-                        de <span>Tristan Derez</span>
+                    <Flex fontSize={["40px", "56px", "80px", "115px"]} lineHeight="1" fontWeight="300">
+                        de <span className="importantName">Tristan Derez</span>
                     </Flex>
                 </Flex>
                 <Flex justifyContent="flex-end">
