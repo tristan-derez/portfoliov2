@@ -8,6 +8,7 @@ const queryClient = new QueryClient();
 import { Navbar } from "./components/Navbar";
 import { Welcome } from "./components/Welcome";
 import { AboutMe } from "./components/AboutMe";
+import { Projects } from "./components/Projects";
 
 const theme = extendTheme({ config: { initialColorMode: "light" } });
 
@@ -19,6 +20,7 @@ function App() {
                     <Navbar />
                     <Welcome />
                     <AboutMe />
+                    <Projects />
                 </Flex>
             </ChakraProvider>
         </QueryClientProvider>
