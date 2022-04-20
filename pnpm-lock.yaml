@@ -5,7 +5,9 @@ specifiers:
   '@chakra-ui/react': ^1.8.3
   '@emotion/react': ^11.7.1
   '@emotion/styled': ^11.6.0
-  '@fontsource/zen-kaku-gothic-antique': ^4.5.10
+  '@fontsource/raleway': ^4.5.5
+  '@fontsource/six-caps': ^4.5.5
+  '@fontsource/source-sans-pro': ^4.5.6
   '@pastable/core': ^0.1.19
   '@types/react': ^17.0.39
   '@types/react-dom': ^17.0.11
@@ -33,7 +35,9 @@ dependencies:
   '@chakra-ui/react': 1.8.3_62a1f0adae34171ee3d250394ea52770
   '@emotion/react': 11.7.1_7c3ecd89bd75b61b41f2029715ea2305
   '@emotion/styled': 11.6.0_9b9ae732b3b2d88f2c185c94e7019fd1
-  '@fontsource/zen-kaku-gothic-antique': 4.5.10
+  '@fontsource/raleway': 4.5.5
+  '@fontsource/six-caps': 4.5.5
+  '@fontsource/source-sans-pro': 4.5.6
   '@pastable/core': 0.1.19_85bd104d063af9b8c16c76227a18ea73
   '@xstate/react': 2.0.0_2698eca3c5a94ce60637347750fb01d7
   axios: 0.25.0
@@ -2162,8 +2166,16 @@ packages:
     resolution: {integrity: sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==}
     dev: false
 
-  /@fontsource/zen-kaku-gothic-antique/4.5.10:
-    resolution: {integrity: sha512-07dVQPKDfO8UfwpU8mPnhTN8Uec6GXg1OR1K1O7Y9oN31qPGQUeP7JGhYF17mSFgs8SiaHyC4IH8TgY0YZOrCg==}
+  /@fontsource/raleway/4.5.5:
+    resolution: {integrity: sha512-T2zIJ/6/2x+T9+tLtw/qSiJ68ahcceDMUOU3zrzEyNGYXUvlQyU4Cv9wyTmS+TU9IFHHChjMToV6izRL9mqDqg==}
+    dev: false
+
+  /@fontsource/six-caps/4.5.5:
+    resolution: {integrity: sha512-HrHhbLnNv2s/9NstVRwsb4azQud8AWX8D8SYbvsiQjz6RvOV3uy5EHldfDafwReDudK7e401c5XTWV/7qlXExg==}
+    dev: false
+
+  /@fontsource/source-sans-pro/4.5.6:
+    resolution: {integrity: sha512-MPv0Ye2OmcRD4wQ/7lOkysQpXpWkDSqZ2QHdNNLj7CQVtG03BScLMYQXZbYNhNMbH518tdMFewqDSu+/ikAMTg==}
     dev: false
 
   /@jridgewell/resolve-uri/3.0.5:
