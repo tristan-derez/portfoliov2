@@ -52,15 +52,13 @@ export const Navbar = () => {
             {/* Navbar on mobile device */}
             <Flex
                 w="100vw"
-                zIndex={20}
                 h="100vh"
-                pos="fixed"
+                zIndex={20}
                 inset="0"
-                overflow="none"
                 flexDir="column"
                 display={display}
                 color={useColorModeValue("black", "white")}
-                background={useColorModeValue("#FFFDD0", "black")}
+                background={useColorModeValue("white", "#1A202C")}
                 position="absolute"
             >
                 <Flex justify="flex-end">
@@ -69,7 +67,7 @@ export const Navbar = () => {
                         aria-label="close menu"
                         position="absolute"
                         top="10px"
-                        right="20px"
+                        right="40px"
                         size="lg"
                         h="40px"
                         w="40px"
