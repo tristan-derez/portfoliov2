@@ -87,8 +87,8 @@ export const Navbar = () => {
             <Flex position="fixed" bottom="40px" right="40px">
                 <Button
                     px="20px"
-                    py="5px"
                     bg="none"
+                    borderRadius="30px"
                     variant="outline"
                     borderColor={mobileSwitch}
                     onClick={toggleColorMode}
