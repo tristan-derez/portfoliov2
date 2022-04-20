@@ -5,10 +5,10 @@ import { QueryClient, QueryClientProvider } from "react-query";
 
 const queryClient = new QueryClient();
 
-// import { Cursor } from "./components/Cursor";
 import { Navbar } from "./components/Navbar";
 import { Welcome } from "./components/Welcome";
 import { AboutMe } from "./components/AboutMe";
+import { Skills } from "./components/Skills";
 
 const theme = extendTheme({ config: { initialColorMode: "light" } });
 
@@ -17,10 +17,10 @@ function App() {
         <QueryClientProvider client={queryClient}>
             <ChakraProvider theme={theme}>
                 <Flex direction="column" boxSize="100%">
-                    {/* <Cursor /> */}
                     <Navbar />
                     <Welcome />
                     <AboutMe />
+                    <Skills />
                 </Flex>
             </ChakraProvider>
         </QueryClientProvider>
