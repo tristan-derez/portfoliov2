@@ -2,14 +2,7 @@ import { Box, Flex, Heading, Text, chakra, useColorModeValue, Button, Center, Li
 
 export const AboutMe = ({ ...props }) => {
     return (
-        <Flex
-            flexDirection={["column", "column", "column", "row-reverse"]}
-            alignItems="center"
-            justifyContent="center"
-            py="50px"
-            {...props}
-            id="about"
-        >
+        <Flex alignItems="center" justifyContent="center" py="50px" {...props} id="about">
             <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["300px", "350px", "500px", "750px"]}>
                 <Heading as="h1" fontFamily="Zen Kaku Gothic Antique" fontSize="20px">
                     A propos
