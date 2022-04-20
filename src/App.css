@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    scrollbar-width: thin;
 }
 
 html {
@@ -9,24 +10,15 @@ html {
     scroll-behavior: smooth;
 }
 
-.cursor-dot-outline {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(265, 165, 0, 0.5);
-    border: 2px solid orange;
-    pointer-events: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+span {
+    color: orange;
+    display: inline-flex;
+    padding-left: 20px;
 }
 
-@media only screen and (max-width: 1024px) {
-    .cursor-dot-outline {
-        border: 0;
-        background-color: rgb(265, 165, 0, 0);
-    }
+.separator {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ffa500;
+    height: 2px;
 }
