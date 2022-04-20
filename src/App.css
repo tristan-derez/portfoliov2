@@ -10,10 +10,11 @@ html {
     scroll-behavior: smooth;
 }
 
-span {
+.importantName {
     color: orange;
     display: inline-flex;
-    padding-left: 20px;
+    padding-left: 10px;
+    font-weight: 600;
 }
 
 .separator {
