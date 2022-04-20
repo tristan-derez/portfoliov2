@@ -2,15 +2,24 @@ import { Box, Flex, Heading, Text, chakra, useColorModeValue, Button, Center, Li
 
 export const AboutMe = ({ ...props }) => {
     return (
-        <Flex alignItems="center" justifyContent="center" py="50px" {...props} id="about">
-            <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["300px", "350px", "500px", "750px"]}>
-                <Heading as="h1" fontFamily="Zen Kaku Gothic Antique" fontSize="20px">
+        <Flex
+            alignItems="center"
+            justifyContent="center"
+            minH="100vh"
+            py="50px"
+            {...props}
+            fontFamily="Raleway"
+            fontWeight="400"
+            id="about"
+        >
+            <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["300px", "350px", "750px", "900px"]}>
+                <Heading as="h1" fontFamily="Raleway" fontSize="20px">
                     A propos
                 </Heading>
                 <div className="separator"></div>
-                <Text fontFamily="Zen Kaku Gothic Antique" fontSize="20px" pt="15px">
+                <Text fontSize="20px" pt="15px">
                     Étudiant Développeur Front-end, je suis à la recherche d'une entreprise pour m'accueillir en
-                    alternance d'un an, au rythme de 3/4 jours en entreprise et le reste en formation avec
+                    alternance d'un an, au rythme de 4 jours en entreprise et le reste en formation avec
                     <AboutMeLink href="https://www.openclassrooms.com">OpenClassrooms</AboutMeLink>.
                 </Text>
                 <Center pt="15px">
