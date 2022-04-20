@@ -1,7 +1,7 @@
 import "./index.css";
-import "@fontsource/zen-kaku-gothic-antique";
-import "./fonts/Harmond/Harmond-ExtraBoldExpanded.otf";
-import "./fonts/Harmond/Harmond-SemiBoldCondensed.otf";
+
+//typeface
+import "@fontsource/raleway";
 
 import React from "react";
 import ReactDOM from "react-dom";
