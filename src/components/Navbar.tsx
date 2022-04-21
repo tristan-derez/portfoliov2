@@ -4,6 +4,8 @@ import { useState } from "react";
 // icons
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import { SunIcon } from "./icon-components/SunIcon";
+import { MoonIcon } from "./icon-components/MoonIcon";
 
 export const Navbar = () => {
     const { toggleColorMode, colorMode } = useColorMode();
@@ -33,10 +35,16 @@ export const Navbar = () => {
                 fontWeight="400"
                 letterSpacing="1px"
                 display={["none", "none", "flex", "flex"]}
+                alignItems="center"
             >
                 <CustomLink href="#about">A propos</CustomLink>
                 <CustomLink href="#projects">Projets</CustomLink>
                 <CustomLink href="#contact">Contact</CustomLink>
+                <Flex alignSelf="center">
+                    <ToggleButton onClick={toggleColorMode}>
+                        {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+                    </ToggleButton>
+                </Flex>
             </Flex>
             <Flex>
                 {/* Hamburger Icon/Open Menu Button */}
@@ -79,23 +87,19 @@ export const Navbar = () => {
                     />
                 </Flex>
                 <Flex direction="column" alignItems="center" pt="100px" gap="25px" fontFamily="Raleway">
-                    <CustomLink href="#">Home</CustomLink>
-                    <CustomLink href="#">Contact</CustomLink>
+                    <CustomLink href="#" onClick={() => changeDisplay("none")}>
+                        Home
+                    </CustomLink>
+                    <CustomLink href="#About" onClick={() => changeDisplay("none")}>
+                        A propos
+                    </CustomLink>
+                    <CustomLink href="#Projects" onClick={() => changeDisplay("none")}>
+                        Projets
+                    </CustomLink>
+                    <CustomLink href="#Contact" onClick={() => changeDisplay("none")}>
+                        Contact
+                    </CustomLink>
                 </Flex>
-            </Flex>
-            <Flex position="fixed" bottom="40px" right="40px">
-                <Button
-                    px="20px"
-                    bg="none"
-                    borderRadius="30px"
-                    variant="outline"
-                    borderColor={mobileSwitch}
-                    onClick={toggleColorMode}
-                    _hover={{ color: "orange" }}
-                    aria-label="toggle light/dark mode"
-                >
-                    {colorMode === "light" ? "Dark" : "Light"}
-                </Button>
             </Flex>
         </Flex>
     );
@@ -117,15 +121,27 @@ export const CustomLink = ({ children, ...props }) => {
     );
 };
 
-export const IconBut = ({ children, ...props }) => {
+// Toggle Light/Dark Mode Button
+const ToggleButton = ({ children, ...props }) => {
     return (
-        <IconButton
-            bg="orange"
-            _hover={{ bg: useColorModeValue("orange.200", "orange.400") }}
-            {...props}
+        <Button
+            m={0}
+            p={0}
+            bg="none"
             aria-label="toggle light/dark mode"
+            variant="ghost"
+            _hover={{ bg: "none", color: useColorModeValue("#222731", "#90A4D4") }}
+            _active={{
+                bg: "none",
+                transform: "none",
+                borderColor: "none",
+            }}
+            _focus={{
+                boxShadow: "none",
+            }}
+            {...props}
         >
             {children}
-        </IconButton>
+        </Button>
     );
 };
