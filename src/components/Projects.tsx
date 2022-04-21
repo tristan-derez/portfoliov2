@@ -7,7 +7,7 @@ export const Projects = () => {
     return (
         <Flex alignItems="center" justifyContent="center" id="projects">
             <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["300px", "350px", "750px", "900px"]}>
-                <Heading as="h2" fontFamily="Raleway" fontSize="20px">
+                <Heading as="h2" fontFamily="Raleway" fontSize="22px">
                     Projets
                 </Heading>
                 <div className="separator"></div>
@@ -32,7 +32,7 @@ const ProjectItem = ({ data }) => {
                         direction="column"
                         fontWeight="semibold"
                         letterSpacing="wide"
-                        fontSize="xs"
+                        fontSize="16px"
                         textTransform="uppercase"
                         width="100%"
                         bg="#1A1B21"
@@ -44,7 +44,6 @@ const ProjectItem = ({ data }) => {
                             <Text color="orange">{data.stackUsed}</Text>
                         </Center>
                         <Center pt="20px" px="20px" textTransform="none" fontWeight="300">
-                            <Text></Text>
                             <Text>{data.description}</Text>
                         </Center>
                     </Flex>

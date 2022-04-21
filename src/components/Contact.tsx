@@ -20,7 +20,7 @@ export const Contact = ({ ...props }) => {
             id="contact"
         >
             <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["300px", "350px", "750px", "900px"]}>
-                <Heading as="h2" fontFamily="Raleway" fontSize="20px">
+                <Heading as="h2" fontFamily="Raleway" fontSize="22px">
                     Contact
                 </Heading>
                 <div className="separator"></div>

@@ -13,11 +13,11 @@ export const AboutMe = ({ ...props }) => {
             id="about"
         >
             <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["300px", "350px", "750px", "900px"]}>
-                <Heading as="h1" fontFamily="Raleway" fontSize="20px">
+                <Heading as="h1" fontFamily="Raleway" fontSize="24px">
                     A propos
                 </Heading>
                 <div className="separator"></div>
-                <Text fontSize="20px" pt="15px">
+                <Text fontSize={["18px", "18px", "20px", "22px"]} pt="15px" w={["100%", "100%", "70%"]} margin="0 auto">
                     Étudiant Développeur Front-end, je suis à la recherche d'une entreprise pour m'accueillir en
                     alternance d'un an, au rythme de 4 jours en entreprise et le reste en formation avec
                     <AboutMeLink href="https://www.openclassrooms.com">OpenClassrooms</AboutMeLink>.

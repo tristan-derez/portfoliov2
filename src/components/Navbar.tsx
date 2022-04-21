@@ -30,7 +30,7 @@ export const Navbar = () => {
             <Spacer />
             <Flex
                 gap="30px"
-                fontSize="1rem"
+                fontSize={["16px", "16px", "20px", "20px"]}
                 fontFamily="Raleway"
                 fontWeight="400"
                 letterSpacing="1px"

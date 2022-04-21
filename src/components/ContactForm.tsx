@@ -15,7 +15,14 @@ export const ContactForm = () => {
     }
     return (
         <form onSubmit={handleSubmit}>
-            <Flex direction="column" gap="20px" color="orange" w={["300px", "327px", "573px", "730px"]}>
+            <Flex
+                direction="column"
+                gap="20px"
+                color="orange"
+                w={["300px", "327px", "573px", "730px"]}
+                fontFamily="Raleway"
+                fontSize={["16px", "16px", "20px", "22px"]}
+            >
                 <FormLabel htmlFor="email">Email</FormLabel>
                 <input id="email" type="email" name="email" />
                 <ValidationError prefix="Email" field="email" errors={state.errors} />
