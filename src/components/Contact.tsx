@@ -1,7 +1,7 @@
 import { Box, Flex, Heading, Text, Button, Center, Link } from "@chakra-ui/react";
 import { ContactForm } from "./ContactForm";
 
-export const AboutMe = ({ ...props }) => {
+export const Contact = ({ ...props }) => {
     return (
         <Flex
             alignItems="center"
