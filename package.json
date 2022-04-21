@@ -15,6 +15,7 @@
         "@fontsource/raleway": "^4.5.5",
         "@fontsource/six-caps": "^4.5.5",
         "@fontsource/source-sans-pro": "^4.5.6",
+        "@formspree/react": "^2.2.4",
         "@pastable/core": "^0.1.19",
         "@xstate/react": "^2.0.0",
         "axios": "^0.25.0",
