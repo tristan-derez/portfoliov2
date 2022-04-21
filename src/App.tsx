@@ -18,11 +18,15 @@ function App() {
         <QueryClientProvider client={queryClient}>
             <ChakraProvider theme={theme}>
                 <Flex direction="column" boxSize="100%">
-                    <Navbar />
-                    <Welcome />
-                    <AboutMe />
-                    <Projects />
-                    <Contact />
+                    <header>
+                        <Navbar />
+                        <Welcome />
+                    </header>
+                    <main>
+                        <AboutMe />
+                        <Projects />
+                        <Contact />
+                    </main>
                 </Flex>
             </ChakraProvider>
         </QueryClientProvider>
