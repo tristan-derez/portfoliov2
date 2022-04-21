@@ -7,7 +7,7 @@ export const Projects = () => {
     return (
         <Flex alignItems="center" justifyContent="center" id="projects">
             <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["300px", "350px", "750px", "900px"]}>
-                <Heading as="h1" fontFamily="Raleway" fontSize="20px">
+                <Heading as="h2" fontFamily="Raleway" fontSize="20px">
                     Projets
                 </Heading>
                 <div className="separator"></div>
