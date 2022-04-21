@@ -9,6 +9,7 @@ import { Navbar } from "./components/Navbar";
 import { Welcome } from "./components/Welcome";
 import { AboutMe } from "./components/AboutMe";
 import { Projects } from "./components/Projects";
+import { Contact } from "./components/Contact";
 
 const theme = extendTheme({ config: { initialColorMode: "light" } });
 
@@ -21,6 +22,7 @@ function App() {
                     <Welcome />
                     <AboutMe />
                     <Projects />
+                    <Contact />
                 </Flex>
             </ChakraProvider>
         </QueryClientProvider>
