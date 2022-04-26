@@ -13,8 +13,12 @@ html {
 .importantName {
     color: orange;
     display: inline-flex;
-    padding-left: 10px;
+    padding-left: 2px;
     font-weight: 600;
+}
+
+.importantName:hover {
+    color: orangered;
 }
 
 .separator {
