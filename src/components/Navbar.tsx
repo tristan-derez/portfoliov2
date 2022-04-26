@@ -1,16 +1,13 @@
-import { Flex, IconButton, Text, Spacer, chakra, useColorMode, useColorModeValue, Button } from "@chakra-ui/react";
+import { Flex, Spacer, chakra, useColorMode, useColorModeValue, Button, Image } from "@chakra-ui/react";
 import { useState } from "react";
 
 // icons
-import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineClose } from "react-icons/ai";
 import { SunIcon } from "./icon-components/SunIcon";
 import { MoonIcon } from "./icon-components/MoonIcon";
 
 export const Navbar = () => {
     const { toggleColorMode, colorMode } = useColorMode();
     let [display, changeDisplay] = useState("none");
-    const mobileSwitch = useColorModeValue("black", "white");
     return (
         <Flex
             pos="fixed"
@@ -23,9 +20,7 @@ export const Navbar = () => {
             fontFamily="Raleway"
         >
             <Flex>
-                {/* <Text fontFamily="Raleway" fontSize="2rem">
-                    Tristan Derez
-                </Text> */}
+                <Image src="/images/logo_tristan.png" boxSize="40px" />
             </Flex>
             <Spacer />
             <Flex
