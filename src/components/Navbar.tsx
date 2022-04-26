@@ -13,8 +13,8 @@ export const Navbar = () => {
             pos="fixed"
             w="100%"
             maxWidth="inherit"
-            px={["6px", "6px", "40px"]}
-            py="10px"
+            px={["15px", "15px", "40px"]}
+            py="20px"
             color={useColorModeValue("black", "white")}
             alignItems="center"
             fontFamily="Raleway"
@@ -36,7 +36,7 @@ export const Navbar = () => {
                 <CustomLink href="#projects">Projets</CustomLink>
                 <CustomLink href="#contact">Contact</CustomLink>
             </Flex>
-            <Flex alignSelf="center" pl="30px">
+            <Flex pl={[0, 0, "30px"]} alignItems="centrer">
                 <ToggleButton onClick={toggleColorMode}>
                     {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
                 </ToggleButton>
