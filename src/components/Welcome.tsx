@@ -1,9 +1,8 @@
 import { Flex, Text } from "@chakra-ui/react";
-// import { BouncingArrow } from "./BoucingArrow";
 
 export const Welcome = () => {
     return (
-        <Flex minH="100vh" justifyContent="center" alignItems="center" fontFamily="Raleway" fontWeight="600">
+        <Flex minH="100vh" justifyContent="center" alignItems="center" fontFamily="Raleway" fontWeight="600" mt="60px">
             <Flex direction="column" h="inherit" w={["300px", "450px", "600px", "850px"]}>
                 <Flex>
                     <Text fontSize={["40px", "56px", "80px", "115px"]} lineHeight="1">
@@ -29,9 +28,6 @@ export const Welcome = () => {
                         ✌️
                     </Text>
                 </Flex>
-                {/* <Flex fontSize="30px" position="relative" bottom="0" margin="0 auto">
-                    <BouncingArrow />{" "}
-                </Flex> */}
             </Flex>
         </Flex>
     );
