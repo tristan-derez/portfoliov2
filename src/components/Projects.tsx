@@ -6,7 +6,7 @@ import { FiExternalLink } from "react-icons/fi";
 export const Projects = () => {
     return (
         <Flex alignItems="center" justifyContent="center" id="projects">
-            <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["300px", "327px", "573px", "730px"]}>
+            <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["320px", "375px", "600px", "730px"]}>
                 <Heading as="h2" fontFamily="Raleway" fontSize="22px">
                     Projets
                 </Heading>
@@ -24,7 +24,7 @@ export const Projects = () => {
 const ProjectItem = ({ data }) => {
     return (
         <WrapItem overflow="hidden" borderRadius="5px" fontFamily="Raleway">
-            <Center flexDirection="column" width={["300px", "350px", "600px", "800px"]}>
+            <Center flexDirection="column" w={["300px", "327px", "500px", "650px"]}>
                 <Image src={data.imageUrl} alt={data.imageAlt} />
                 <Flex direction="column" w="100%" borderTop="2px solid #161619">
                     <Flex

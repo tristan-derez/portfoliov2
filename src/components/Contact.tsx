@@ -1,11 +1,10 @@
 //chakra
-import { Box, Flex, Heading, useToast } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Link } from "@chakra-ui/react";
 
 //icons
 import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
 
 export const Contact = ({ ...props }) => {
-    const toast = useToast();
     return (
         <Flex
             alignItems="center"
@@ -16,11 +15,14 @@ export const Contact = ({ ...props }) => {
             fontWeight="400"
             id="contact"
         >
-            <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["300px", "350px", "750px", "900px"]}>
+            <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["320px", "375px", "600px", "730px"]}>
                 <Heading as="h2" fontFamily="Raleway" fontSize="22px">
                     Contact
                 </Heading>
                 <div className="separator"></div>
+                <Text pt="15px">
+                    Laissez moi un <Link>message</Link>
+                </Text>
             </Box>
         </Flex>
     );
