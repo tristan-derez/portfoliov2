@@ -37,8 +37,6 @@ export const Navbar = () => {
                 <CustomLink href="#contact">Contact</CustomLink>
             </Flex>
             <Flex alignSelf="center" pl="30px">
-                {/* Hamburger Icon/Open Menu Button */}
-
                 <ToggleButton onClick={toggleColorMode}>
                     {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
                 </ToggleButton>
