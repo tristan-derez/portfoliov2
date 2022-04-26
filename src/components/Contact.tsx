@@ -1,10 +1,6 @@
 //chakra
 import { Box, Flex, Heading, Text, Link } from "@chakra-ui/react";
 
-//icons
-import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
-import { notifyManager } from "react-query";
-
 export const Contact = ({ ...props }) => {
     return (
         <Flex
