@@ -1,5 +1,5 @@
 //chakra
-import { Flex, Button, Icon, useToast, FormLabel } from "@chakra-ui/react";
+import { Flex, Button, Icon, useToast, FormLabel, Input } from "@chakra-ui/react";
 
 //formspree
 import { useForm, ValidationError } from "@formspree/react";
@@ -18,15 +18,14 @@ export const ContactForm = () => {
             <Flex
                 direction="column"
                 gap="20px"
-                color="orange"
                 w={["300px", "327px", "573px", "730px"]}
                 fontFamily="Raleway"
                 fontSize={["16px", "16px", "20px", "22px"]}
             >
-                <FormLabel htmlFor="email">Email</FormLabel>
-                <input id="email" type="email" name="email" />
+                <FormLabel htmlFor="email"></FormLabel>
+                <Input id="email" type="email" name="email" isRequired placeholder="Email" />
                 <ValidationError prefix="Email" field="email" errors={state.errors} />
-                <textarea id="message" name="message" />
+                <Input id="message" name="message" placeholder="Ecrivez-moi 😄" isRequired />
                 <ValidationError prefix="Message" field="message" errors={state.errors} />
                 <Button
                     type="submit"
