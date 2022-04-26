@@ -39,7 +39,7 @@ export const AboutMe = ({ ...props }) => {
                     Date: du 13.06.2022 au 13.10.2023
                 </Text>
                 <Center pt="15px">
-                    <Link href="/cv_derez.pdf" download _hover={{ textDecoration: "none" }}>
+                    <Link href="/cv_derez_oclock.pdf" download _hover={{ textDecoration: "none" }}>
                         <Button
                             borderRadius="30px"
                             mt="40px"
