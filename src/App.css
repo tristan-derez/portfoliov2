@@ -10,17 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.importantName {
-    color: orange;
-    display: inline-flex;
-    padding-left: 2px;
-    font-weight: 600;
-}
-
-.importantName:hover {
-    color: #cc6600;
-}
-
 .separator {
     margin-top: 20px;
     width: 100%;

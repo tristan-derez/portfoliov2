@@ -15,8 +15,11 @@ export const Welcome = () => {
                     </Text>
                 </Flex>
                 <Flex>
-                    <Flex fontSize={["40px", "56px", "80px", "115px"]} lineHeight="1" fontWeight="300">
-                        de <span className="importantName">Tristan Derez</span>
+                    <Flex fontSize={["40px", "56px", "80px", "113px"]} lineHeight="1" fontWeight="300">
+                        de{" "}
+                        <Text display="inline-flex" color="orange" _hover={{ color: "orange.400" }} fontWeight="bold">
+                            Tristan Derez
+                        </Text>
                     </Flex>
                 </Flex>
                 <Flex justifyContent="flex-end">
