@@ -23,7 +23,10 @@ export const Contact = ({ ...props }) => {
                         textDecoration="none"
                         _hover={{ textDecoration: "none" }}
                     >
-                        Laissez moi un <span className="importantName">message</span>
+                        Laissez moi un{" "}
+                        <Text display="inline-flex" color="orange" _hover={{ color: "orange.400" }}>
+                            message
+                        </Text>
                     </Link>
                 </Box>
             </Box>
