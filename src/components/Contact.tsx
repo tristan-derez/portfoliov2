@@ -15,7 +15,7 @@ export const Contact = ({ ...props }) => {
             fontWeight="400"
             id="contact"
         >
-            <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["320px", "375px", "600px", "730px"]}>
+            <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["300px", "375px", "600px", "730px"]}>
                 <Heading as="h2" fontFamily="Raleway" fontSize="22px">
                     Contact
                 </Heading>

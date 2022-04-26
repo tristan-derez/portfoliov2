@@ -12,7 +12,7 @@ export const AboutMe = ({ ...props }) => {
             fontWeight="400"
             id="about"
         >
-            <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["320px", "375px", "600px", "730px"]}>
+            <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["300px", "375px", "600px", "730px"]}>
                 <Heading as="h1" fontFamily="Raleway" fontSize="24px">
                     A propos
                 </Heading>

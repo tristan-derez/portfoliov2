@@ -6,7 +6,7 @@ import { FiExternalLink } from "react-icons/fi";
 export const Projects = () => {
     return (
         <Flex alignItems="center" justifyContent="center" id="projects">
-            <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["320px", "375px", "600px", "730px"]}>
+            <Box pt={["20px", "20px", "20px", 0]} textAlign="center" w={["300px", "375px", "600px", "730px"]}>
                 <Heading as="h2" fontFamily="Raleway" fontSize="22px">
                     Projets
                 </Heading>

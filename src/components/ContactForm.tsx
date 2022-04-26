@@ -18,7 +18,7 @@ export const ContactForm = () => {
             <Flex
                 direction="column"
                 gap="20px"
-                w={["300px", "327px", "573px", "730px"]}
+                w={["300px", "375px", "600px", "730px"]}
                 fontFamily="Raleway"
                 fontSize={["16px", "16px", "20px", "22px"]}
             >
