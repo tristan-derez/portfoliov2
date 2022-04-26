@@ -20,7 +20,7 @@ export const Navbar = () => {
             fontFamily="Raleway"
         >
             <Flex>
-                <Image src="/images/logo_tristan.png" boxSize="40px" />
+                <Image src="/images/logo_tristan.png" boxSize="40px" alt="logo" />
             </Flex>
             <Spacer />
             <Flex
