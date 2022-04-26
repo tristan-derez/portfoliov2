@@ -27,14 +27,4 @@ export const data = [
         adress: "https://equalizer-landingpage.vercel.app/",
         code: "https://github.com/dreyzu/equalizer-landingpage",
     },
-    {
-        imageUrl: "/images/Equalizer.png",
-        imageAlt: "placeholder",
-        stackUsed: "React, Chakra-UI",
-        title: "Equalizer Landing Page",
-        description:
-            "In this project, you'll use the GitHub users API to pull profile data and display it. It's a great challenge if you're looking to practice working with a 3rd-party API.",
-        adress: "https://equalizer-landingpage.vercel.app/",
-        code: "https://github.com/dreyzu/equalizer-landingpage",
-    },
 ];
