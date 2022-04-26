@@ -1,9 +1,6 @@
 //chakra
 import { Box, Flex, Heading, useToast } from "@chakra-ui/react";
 
-// components
-import { ContactForm } from "./ContactForm";
-
 //icons
 import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
 
@@ -24,8 +21,6 @@ export const Contact = ({ ...props }) => {
                     Contact
                 </Heading>
                 <div className="separator"></div>
-
-                <ContactForm />
             </Box>
         </Flex>
     );
