@@ -8,8 +8,8 @@ import { notifyManager } from "react-query";
 export const Contact = ({ ...props }) => {
     return (
         <Flex
-            mt="300px"
             justifyContent="center"
+            alignItems="center"
             minH="100vh"
             {...props}
             fontFamily="Raleway"
@@ -21,7 +21,7 @@ export const Contact = ({ ...props }) => {
                     Contact
                 </Heading>
                 <div className="separator"></div>
-                <Box py={["150px", "250px"]} fontSize={["22px", "30px"]} fontWeight="bold">
+                <Box fontSize={["22px", "30px"]} fontWeight="bold" pt="50px">
                     <Link
                         href="mailto:tristan.derez@gmail.com"
                         textDecoration="none"
@@ -30,21 +30,6 @@ export const Contact = ({ ...props }) => {
                         Laissez moi un <span className="importantName">message</span>
                     </Link>
                 </Box>
-                <div className="separator"></div>
-                <Flex gap="20px" justifyContent="center" pt="15px">
-                    <Link href="https://www.linkedin.com/in/tristan-derez/" isExternal>
-                        Linkedin
-                    </Link>
-                    <Link href="https://www.linkedin.com/in/tristan-derez/" isExternal>
-                        GitHub
-                    </Link>
-                    <Link href="https://www.linkedin.com/in/tristan-derez/" isExternal>
-                        Twitter
-                    </Link>
-                    <Link href="https://www.linkedin.com/in/tristan-derez/" isExternal>
-                        Instagram
-                    </Link>
-                </Flex>
             </Box>
         </Flex>
     );
