@@ -24,7 +24,7 @@ export const Projects = () => {
 const ProjectItem = ({ data }) => {
     return (
         <WrapItem overflow="hidden" borderRadius="5px" fontFamily="Raleway">
-            <Center flexDirection="column" width={["400px"]}>
+            <Center flexDirection="column" width={["300px", "350px", "600px", "800px"]}>
                 <Image src={data.imageUrl} alt={data.imageAlt} />
                 <Flex direction="column" w="100%" borderTop="2px solid #161619">
                     <Flex
@@ -47,15 +47,22 @@ const ProjectItem = ({ data }) => {
                             <Text>{data.description}</Text>
                         </Center>
                     </Flex>
-                    <Flex justifyContent="center" alignItems="center" gap="20px" py="20px" bg="#161619">
+                    <Flex
+                        justifyContent="center"
+                        alignItems="center"
+                        gap="20px"
+                        py="20px"
+                        bg="#161619"
+                        letterSpacing="2px"
+                        fontWeight="bold"
+                    >
                         <Link href={data.code} isExternal>
                             <Button
                                 rightIcon={<FiExternalLink color="white" />}
                                 colorScheme="whiteAlpha"
                                 color="white"
-                                fontWeight="400"
+                                w="120px"
                                 h="34px"
-                                w={["120px", "140px"]}
                                 px="15px"
                             >
                                 GitHub
@@ -67,9 +74,8 @@ const ProjectItem = ({ data }) => {
                                 backgroundColor="orange"
                                 color="black"
                                 _hover={{ bg: "orange.200" }}
-                                fontWeight="400"
+                                w="120px"
                                 h="34px"
-                                w={["120px", "140px"]}
                                 px="15px"
                             >
                                 Live site
