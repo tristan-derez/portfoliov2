@@ -1,4 +1,15 @@
-import { Box, Flex, Heading, Text, chakra, useColorModeValue, Button, Center, Link } from "@chakra-ui/react";
+import {
+    Box,
+    Flex,
+    Heading,
+    Text,
+    chakra,
+    useColorModeValue,
+    Button,
+    Center,
+    Link,
+    textDecoration,
+} from "@chakra-ui/react";
 
 export const AboutMe = ({ ...props }) => {
     return (
@@ -18,12 +29,17 @@ export const AboutMe = ({ ...props }) => {
                 </Heading>
                 <div className="separator"></div>
                 <Text fontSize={["18px", "18px", "20px", "22px"]} pt="15px" w={["100%", "100%", "70%"]} margin="0 auto">
-                    Étudiant Développeur Front-end, je suis à la recherche d'une entreprise pour m'accueillir en
-                    alternance d'un an, au rythme de 4 jours en entreprise et le reste en formation avec
-                    <AboutMeLink href="https://www.openclassrooms.com">OpenClassrooms</AboutMeLink>.
+                    Étudiant Développeur-concepteur d'application, je suis à la recherche d'une entreprise pour
+                    m'accueillir en alternance de 16 mois, au rythme de 2 jours en formation et le reste en entreprise
+                    avec
+                    <AboutMeLink href="https://oclock.io/formations/alternance" _hover={{ color: "orange.400" }}>
+                        O'clock
+                    </AboutMeLink>
+                    .<br />
+                    Date: du 13.06.2022 au 13.10.2023
                 </Text>
                 <Center pt="15px">
-                    <Link href="/cv_derez.pdf" download>
+                    <Link href="/cv_derez.pdf" download _hover={{ textDecoration: "none" }}>
                         <Button
                             borderRadius="30px"
                             mt="40px"
