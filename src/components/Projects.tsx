@@ -41,7 +41,9 @@ const ProjectItem = ({ data }) => {
                         <Center>{data.title}</Center>
                         <Center pt="20px">
                             <Text>Techs: &nbsp;</Text>
-                            <Text color="orange">{data.stackUsed}</Text>
+                            <Text color="orange" _hover={{ color: "orange.400" }}>
+                                {data.stackUsed}
+                            </Text>
                         </Center>
                         <Center pt="20px" px="20px" textTransform="none" fontWeight="300">
                             <Text>{data.description}</Text>
@@ -56,7 +58,7 @@ const ProjectItem = ({ data }) => {
                         letterSpacing="2px"
                         fontWeight="bold"
                     >
-                        <Link href={data.code} isExternal>
+                        <Link href={data.code} _hover={{ textDecoration: "none" }} isExternal>
                             <Button
                                 rightIcon={<FiExternalLink color="white" />}
                                 colorScheme="whiteAlpha"
@@ -68,12 +70,12 @@ const ProjectItem = ({ data }) => {
                                 GitHub
                             </Button>
                         </Link>
-                        <Link href={data.adress} isExternal>
+                        <Link href={data.adress} _hover={{ textDecoration: "none" }} isExternal>
                             <Button
                                 rightIcon={<FiExternalLink color="black" />}
                                 backgroundColor="orange"
                                 color="black"
-                                _hover={{ bg: "orange.200" }}
+                                _hover={{ bg: "orange.400" }}
                                 w="120px"
                                 h="34px"
                                 px="15px"
