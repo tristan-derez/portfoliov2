@@ -31,8 +31,8 @@ export const AboutMe = ({ ...props }) => {
                 <div className="separator"></div>
                 <Text fontSize={["18px", "18px", "20px", "22px"]} pt="15px" w={["100%", "100%", "70%"]} margin="0 auto">
                     Étudiant Développeur-concepteur d'application, je suis à la recherche d'une entreprise pour
-                    m'accueillir en alternance pour 16 mois, au rythme de 2 jours en formation et le reste en entreprise
-                    avec
+                    m'accueillir en alternance pour 16 mois, au rythme de 1 semaine en formation, 2 semaines en
+                    entreprise avec
                     <AboutMeLink href="https://oclock.io/formations/alternance" _hover={{ color: "orange.400" }}>
                         O'clock
                     </AboutMeLink>
