@@ -10,6 +10,7 @@ import {
     Link,
     textDecoration,
 } from "@chakra-ui/react";
+import { notifyManager } from "react-query";
 
 export const AboutMe = ({ ...props }) => {
     return (
@@ -39,17 +40,37 @@ export const AboutMe = ({ ...props }) => {
                     Date: du 13.06.2022 au 13.10.2023
                 </Text>
                 <Center pt="15px">
-                    <Link href="/cv_derez_oclock.pdf" download _hover={{ textDecoration: "none" }}>
-                        <Button
-                            borderRadius="30px"
-                            mt="40px"
-                            padding="15px 50px"
-                            variant="outline"
-                            _hover={{ bg: "orange" }}
+                    <Button
+                        borderRadius="30px"
+                        mt="40px"
+                        variant="outline"
+                        position="relative"
+                        overflow="hidden"
+                        cursor="pointer"
+                        className="main-button"
+                    >
+                        <Flex
+                            w="100%"
+                            h="100%"
+                            left="-200px"
+                            bg="orange.400"
+                            position="absolute"
+                            transition="all 0.35s ease-Out"
+                            bottom="0"
+                            _hover={{ left: "0" }}
+                            className="slide"
+                        ></Flex>
+                        <Link
+                            href="/cv_derez_oclock.pdf"
+                            download
+                            _hover={{ textDecoration: "none" }}
+                            transition="all .35s ease-Out"
+                            position="relative"
+                            px="10px"
                         >
                             TELECHARGER CV
-                        </Button>
-                    </Link>
+                        </Link>
+                    </Button>
                 </Center>
             </Box>
         </Flex>
@@ -57,14 +78,13 @@ export const AboutMe = ({ ...props }) => {
 };
 
 const AboutMeLink = ({ children, ...props }) => {
-    const importantWord = useColorModeValue("orange.400", "orange.600");
     return (
         <chakra.a
             color="orange"
             cursor="pointer"
             pl="5px"
             _hover={{
-                color: { importantWord },
+                color: "orange.400",
             }}
             target="_blank"
             {...props}

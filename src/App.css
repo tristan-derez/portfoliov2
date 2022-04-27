@@ -16,3 +16,7 @@ html {
     background-color: #ffa500;
     height: 2px;
 }
+
+.main-button:hover .slide {
+    left: 0;
+}
