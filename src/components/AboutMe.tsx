@@ -61,7 +61,7 @@ export const AboutMe = ({ ...props }) => {
                             className="slide"
                         ></Flex>
                         <Link
-                            href="/cv_derez_oclock.pdf"
+                            href="/cv_derez_portfolio.pdf"
                             download
                             _hover={{ textDecoration: "none" }}
                             transition="all .35s ease-Out"
