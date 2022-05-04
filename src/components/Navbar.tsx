@@ -1,4 +1,4 @@
-import { Flex, Spacer, chakra, useColorMode, useColorModeValue, Button, Image } from "@chakra-ui/react";
+import { Flex, Spacer, chakra, useColorMode, useColorModeValue, Button, Image, Link } from "@chakra-ui/react";
 import { useState } from "react";
 
 // icons
@@ -20,7 +20,9 @@ export const Navbar = () => {
             fontFamily="Raleway"
         >
             <Flex>
-                <Image src="/images/logo_tristan.png" boxSize="40px" alt="logo" />
+                <Link href="/">
+                    <Image src="/images/logo_tristan.png" boxSize="40px" alt="logo" />
+                </Link>
             </Flex>
             <Spacer />
             <Flex
