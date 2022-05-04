@@ -2,7 +2,15 @@ import { Flex, Text } from "@chakra-ui/react";
 
 export const Welcome = () => {
     return (
-        <Flex minH="100vh" justifyContent="center" alignItems="center" fontFamily="Raleway" fontWeight="600" mt="60px">
+        <Flex
+            minH="100vh"
+            justifyContent="center"
+            alignItems="center"
+            fontFamily="Raleway"
+            fontWeight="600"
+            mt="60px"
+            id="welcome"
+        >
             <Flex direction="column" h="inherit" w={["300px", "450px", "600px", "850px"]}>
                 <Flex>
                     <Text fontSize={["40px", "56px", "80px", "115px"]} lineHeight="1">
