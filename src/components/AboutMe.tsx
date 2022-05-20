@@ -29,16 +29,34 @@ export const AboutMe = ({ ...props }) => {
                     A propos
                 </Heading>
                 <div className="separator"></div>
-                <Text fontSize={["18px", "18px", "20px", "22px"]} pt="15px" w={["100%", "100%", "70%"]} margin="0 auto">
-                    Étudiant Développeur-concepteur d'application, je suis à la recherche d'une entreprise pour
-                    m'accueillir en alternance pour 16 mois, au rythme de 2 semaines en entreprise et 1 semaine en
-                    formation, avec
+                <Box
+                    fontSize={["18px", "18px", "20px", "22px"]}
+                    pt="15px"
+                    w={["100%", "100%", "90%"]}
+                    margin="0 auto"
+                    textAlign="justify"
+                >
+                    Dans le cadre d'une formation Concepteur-Développeur d'application avec{" "}
                     <AboutMeLink href="https://oclock.io/formations/alternance" _hover={{ color: "orange.400" }}>
                         O'clock
                     </AboutMeLink>
-                    .<br />
-                    Date: du 13.06.2022 au 13.10.2023
-                </Text>
+                    , je suis à la recherche d'une entreprise pour m'accueillir. <br />
+                    <br />
+                    Formation en alternance de 16 mois, 721 heures de formations. <br />
+                    <Text color="orange" _hover={{ color: "orange.400" }}>
+                        Rythme de l'alternance :
+                    </Text>{" "}
+                    1 semaine en formation / 2 semaines en entreprise - 3 derniers mois en entreprise. <br />
+                    <Text color="orange" _hover={{ color: "orange.400" }}>
+                        Au programme :
+                    </Text>{" "}
+                    PHP - Laravel - Javascript - Vue.js - Node.js - Flutter - Docker - NoSQL - API (Rest, GraphQL,
+                    Websockets) <br />
+                    <Text color="orange" _hover={{ color: "orange.400" }}>
+                        Date :
+                    </Text>{" "}
+                    du 13.06.2022 au 13.10.2023
+                </Box>
                 <Center pt="15px">
                     <Button
                         borderRadius="30px"
