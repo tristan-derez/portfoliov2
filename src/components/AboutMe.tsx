@@ -1,16 +1,4 @@
-import {
-    Box,
-    Flex,
-    Heading,
-    Text,
-    chakra,
-    useColorModeValue,
-    Button,
-    Center,
-    Link,
-    textDecoration,
-} from "@chakra-ui/react";
-import { notifyManager } from "react-query";
+import { Box, Flex, Heading, Text, chakra, Button, Center, Link } from "@chakra-ui/react";
 
 export const AboutMe = ({ ...props }) => {
     return (
