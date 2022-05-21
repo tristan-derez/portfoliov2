@@ -36,11 +36,12 @@ export const AboutMe = ({ ...props }) => {
                     margin="0 auto"
                     textAlign="justify"
                 >
-                    Dans le cadre d'une formation Concepteur-Développeur d'application avec{" "}
+                    Dans le cadre d'une formation Concepteur-Développeur d'application avec l'école{" "}
                     <AboutMeLink href="https://oclock.io/formations/alternance" _hover={{ color: "orange.400" }}>
                         O'clock
                     </AboutMeLink>
-                    , je suis à la recherche d'une entreprise pour m'accueillir. <br />
+                    , je suis à la recherche d'une entreprise pour assurer la partie professionnelle de mon
+                    apprentissage. <br />
                     <br />
                     Formation en alternance de 16 mois, 721 heures de formations. <br />
                     <Text color="orange" _hover={{ color: "orange.400" }}>
