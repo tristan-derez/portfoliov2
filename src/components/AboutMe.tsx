@@ -39,8 +39,8 @@ export const AboutMe = ({ ...props }) => {
                     <Text color="orange" _hover={{ color: "orange.400" }}>
                         Au programme :
                     </Text>{" "}
-                    PHP - Laravel - Javascript - Vue.js - Node.js - Flutter - Docker - NoSQL - API (Rest, GraphQL,
-                    Websockets) <br />
+                    PHP - Laravel - JavaScript - TypeScript - Vue.js - Node.js - Flutter - Docker - NoSQL - API (Rest,
+                    GraphQL, Websockets) <br />
                     <Text color="orange" _hover={{ color: "orange.400" }}>
                         Date :
                     </Text>{" "}
