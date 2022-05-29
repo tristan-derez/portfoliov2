@@ -24,9 +24,19 @@ export const Welcome = () => {
                 </Flex>
                 <Flex>
                     <Flex fontSize={["40px", "56px", "80px", "113px"]} lineHeight="1" fontWeight="300">
-                        de{" "}
-                        <Text display="inline-flex" color="orange" _hover={{ color: "orange.400" }} fontWeight="bold">
-                            Tristan Derez
+                        de
+                        <Text
+                            display="inline-flex"
+                            color="orange"
+                            _hover={{ color: "orange.400" }}
+                            fontWeight="bold"
+                            px="2px"
+                        >
+                            Tristan
+                        </Text>
+                        <Text color="orange" _hover={{ color: "orange.400" }} fontWeight="bold" px="2px">
+                            {" "}
+                            Derez
                         </Text>
                     </Flex>
                 </Flex>
