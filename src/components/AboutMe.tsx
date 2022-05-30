@@ -68,7 +68,7 @@ export const AboutMe = ({ ...props }) => {
                             className="slide"
                         ></Flex>
                         <Link
-                            href="/CV_Tristan_Derez.pdf"
+                            href="/CV-Tristan-Derez.pdf"
                             download
                             _hover={{ textDecoration: "none" }}
                             transition="all .35s ease-Out"
