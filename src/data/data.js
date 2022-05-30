@@ -20,7 +20,7 @@ export const data = [
     },
     {
         imageUrl: "/images/Equalizer.png",
-        imageAlt: "placeholder",
+        imageAlt: "Website's screenshot",
         stackUsed: "React, Chakra-UI",
         title: "Equalizer Landing Page",
         description: "Le défi était de réaliser une landing page à partir d'une maquette fournie par FrontEndMentor",
