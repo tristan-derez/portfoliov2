@@ -15,7 +15,7 @@ export const Footer = ({ ...props }) => {
                 <Link href="https://www.linkedin.com/in/tristan-derez/" _hover={{ textDecoration: "none" }} isExternal>
                     Linkedin
                 </Link>
-                <Link href="https://github.com/dreyzu" _hover={{ textDecoration: "none" }} isExternal>
+                <Link href="https://github.com/tristan-derez" _hover={{ textDecoration: "none" }} isExternal>
                     GitHub
                 </Link>
                 <Link href="https://twitter.com/doreizu" _hover={{ textDecoration: "none" }} isExternal>
